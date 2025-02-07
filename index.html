@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <!-- meta tag -->
+    <meta charset="UTF-8">
+    <meta name="keyword" content="html, css, javascript, bootstrap, jquery">
+    <meta name="author" content="Athika Chowdhury Priya">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- title tag -->
+    <title>Obelisk - Agency Portfolio</title>
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- font awesome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- bootstrap css cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <!-- owl carousel css -->
+     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+     <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <!-- progressbar css cdn -->
+     <link rel="stylesheet" href="assets/css/animated-counter-prograssbar.css">
+     <!-- aos animation css cdn -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <!-- my css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- responsive css -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+
+    <!-- header starts here -->
+    <header class="" >
+        <div class="container-fluid">
+            <!-- header top starts  -->
+            <div class="row">
+                <div class="header-top text-white py-2">
+                    <div class="container">
+                        <div class="row">
+                            <!-- header top 1 -->
+                            <div class="col-sm-5 col-md-6 col-lg-4 col-xl-3 d-flex align-items-center justify-content-center justify-content-sm-start ">
+                                <i class="fa-solid fa-map-location-dot"></i>
+                                <span>2659 Autostrad St, Toronto</span>
+                            </div>
+                            <!-- header top 2 -->
+                            <div class="col-sm-7 col-md-6 col-lg-5 col-xl-3 d-flex align-items-center justify-content-center justify-content-sm-end justify-content-lg-center justify-content-xl-start mt-2 mt-sm-0">
+                                <i class="fa-regular fa-clock"></i>
+                                <span>Opening: Mon-Fri 9:00 AM - 18:00 PM</span>
+                            </div>
+                            <!-- header top 3 -->
+                            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 d-flex align-items-center justify-content-center justify-content-sm-start justify-content-lg-end justify-content-xl-center mt-2 mt-lg-0">
+                                <i class="fa-regular fa-envelope"></i>
+                                <span>Support@obelisk.com</span>
+                            </div>
+                            <!-- header top 4 -->
+                            <div class="col-sm-6 col-md-4 col-lg-6 col-xl-2 d-flex align-items-center justify-content-center justify-content-sm-end  justify-content-md-center justify-content-lg-start justify-content-xl-center mt-2 mt-xl-0">
+                                <i class="fa-solid fa-phone-flip"></i>
+                                <span>009462 2238, 2248</span>
+                            </div>
+                            <!-- header top 5 -->
+                            <div class="col-sm-12 col-md-4 col-lg-6 col-xl-2 d-flex align-items-center justify-content-center  justify-content-md-end mt-2 mt-xl-0">
+                                <div>
+                                    <i class="fa-brands fa-facebook-f "></i>
+                                </div>
+                                <div>
+                                    <i class="fa-brands fa-twitter "></i>
+                                </div>
+                                <div>
+                                    <i class="fa-brands fa-instagram "></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- nav starts  -->
+             <div class="row bg-white ">
+                <nav class="navbar navbar-expand-lg ">
+                    <div class="container">
+                        <!-- navbar brand -->
+                        <a href="index.html" class="navbar-brand">
+                            <img src="assets/images/logo.png" alt="Logo" class="img-fluid">
+                        </a>
+                        <!-- navbar nav -->
+                         <div class="offcanvas offcanvas-end navbar-collapse text-bg-dark" id="myNav" tabindex="-1" aria-labelledby="myNav">
+                            <div class="offcanvas-header mt-1">
+                                <div class="offcanvas-title" id="myNav">
+                                    <button type="button" class="btn-close btn-close-white mt-2" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+                            </div>
+                            <ul class="offcanvas-body navbar-nav mx-auto me-lg-0 mb-lg-0">
+                                <li class="nav-item">
+                                    <a href="index.html" class="nav-link text-decoration-none text-center mb-2 mb-lg-0 mx-0 me-lg-4">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#about" class="nav-link text-decoration-none text-center mb-2 mb-lg-0 ms-0 mx-lg-4">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#portfolio" class="nav-link text-decoration-none text-center mb-2 mb-lg-0 mx-0 mx-lg-4">Portfolio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#services" class="nav-link text-decoration-none  text-center mb-2 mb-lg-0 mx-0 mx-lg-4">Services</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#contact" class="nav-link text-decoration-none text-center mb-0 mb-lg-0 mx-0 ms-lg-4">Contact</a>
+                                </li>
+                            </ul>
+                         </div>
+                          <!-- nav toggler -->
+                          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#myNav" aria-controls="myNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fa-solid fa-bars-staggered"></i>
+                        </button>
+                    </div>
+                </nav>
+             </div>
+        </div>
+    </header>
+    <!-- header ends here -->
+
+
+    <!-- main starts here -->
+    <main>
+
+        <!-- banner starts here -->
+        <section id="banner">
+            <div id="carouselAutoplaying" class="carousel slide carousel-fade " data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- banner carousel 1 -->
+                  <div class="carousel-item active" data-bs-interval="3000">
+                    <div class="carousel-content1">
+                        <div class="container">
+                            <div class="row py-5 ">
+                                <div class="offset-md-2 col-md-8 text-center">
+                                    <h1 class="" data-aos="fade-right">
+                                        <span class="background-color">Digital</span>
+                                        <br> 
+                                        <span class="background-color">Design Awards</span>
+                                    </h1>
+                                    <p class="description mt-2 mt-lg-3" data-aos="fade-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero suscipit aliquid illo praesentium eligendi a quibusdam.</p>
+                                    <a href="#" class="btn text-decoration-none btn-style mt-1 mt-md-2" data-aos="fade-up">Discover more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="page-number text-white">
+                            <p>1
+                                <span>,</span>
+                                <span>3</span>
+                            </p>
+                        </div>
+                    </div>
+                  </div>
+                  <!-- banner carousel 2 -->
+                  <div class="carousel-item" data-bs-interval="3000">
+                    <div class="carousel-content2">
+                        <div class="container">
+                            <div class="row py-5 ">
+                                <div class="offset-md-2 col-md-8 text-center">
+                                    <h1 class="">
+                                        <span class="background-color">Creative</span>
+                                        <br> 
+                                        <span class="background-color">Digital Solutions</span>
+                                    </h1>
+                                    <p class="description mt-2 mt-lg-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero suscipit aliquid illo praesentium eligendi a quibusdam.</p>
+                                    <a href="#" class="btn text-decoration-none btn-style mt-1 mt-md-2">Discover more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="page-number text-white">
+                            <p>2
+                                <span>,</span>
+                                <span>3</span>
+                            </p>
+                        </div>
+                    </div>
+                  </div>
+                  <!-- banner carousel 3 -->
+                  <div class="carousel-item" data-bs-interval="3000">
+                    <div class="carousel-content3">
+                        <div class="container">
+                            <div class="row py-5 ">
+                                <div class="offset-md-2 col-md-8 text-center">
+                                    <h1 class="">
+                                        <span class="background-color">Business Value</span>
+                                        <br> 
+                                        <span class="background-color">Through Digital</span>
+                                        <br> 
+                                        <span class="background-color">Products</span>
+                                    </h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="page-number text-white">
+                            <p>3
+                                <span>,</span>
+                                <span>3</span>
+                            </p>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselAutoplaying" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true">
+                    <i class="fa-solid fa-chevron-left"></i>
+                  </span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselAutoplaying" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true">
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </section>
+        <!-- banner ends here -->
+
+
+        <!-- about starts here -->
+          <section id="about" class="section-padding">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-lg-6 " data-aos="fade-right">
+                        <span class="section-heading background-color">DIGITAL CONSULTING</span>
+                        <h2 class="section-subheading text-white mt-3">Unique Business Consulting Agency corporate.</h2>
+                        <p class="description mt-3 mt-md-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo</p>
+                        <ul class="mt-3 mt-md-4">
+                            <li class="description d-flex mb-2 mb-md-3">
+                                <div>
+                                    <i class="fa-solid fa-circle-arrow-right"></i>
+                                </div>
+                                <span>Branding the latest marketing agency.</span>    
+                            </li>
+                            <li class="description d-flex mb-2 mb-md-3">
+                                <div>
+                                    <i class="fa-solid fa-circle-arrow-right"></i>
+                                </div>
+                                <span>Connect to more online customers.</span>    
+                            </li>
+                            <li class="description d-flex ">
+                                <div>
+                                    <i class="fa-solid fa-circle-arrow-right"></i>
+                                </div>
+                                <span>Grow up your digital business.</span>    
+                            </li>
+                        </ul>
+                        <div class="about-btn mt-4">
+                            <button class="btn btn-style text-white background-color">Discover More
+                                <i class="fa-solid fa-up-right-from-square text-white"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6  about-content text-end pt-5 pt-lg-0">
+                        <img src="assets/images/about.jpg" alt="About Obelisk" class="img-fluid about-img" data-aos="fade-up">
+                        <div class="growth">
+                            <div class="d-flex gap-2">
+                                <div class="text-center ">
+                                    <img src="assets/images/graph.png" alt="graph" class="img-fluid">
+                                </div>
+                                <div class="progress-container">
+                                    
+
+                                    <div class="progressbar-item">
+                                        <h4 class="progress-title text-uppercase text-start mt-1">Annual</h4>
+                                        <div progress-bar data-percentage="90%">
+                                          <div class="progress-number">
+                                            <div class="progress-number-mark">
+                                              <span class="percent"></span>
+                                              <span class="down-arrow"></span>
+                                            </div>
+                                          </div>
+                                          <div class="progress-bg">
+                                            <div class="progress-fill"></div>
+                                          </div>
+                                        </div>
+                                        <h4 class="text-white progress-title2 text-start ">Business Growth</h4>
+                                      </div>
+                                      
+                                      
+                                     
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </section>
+        <!-- about ends here -->
+
+
+        <!-- feature starts here -->
+         <section id="feature-section" class="section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="offset-lg-2 col-lg-8 text-center">
+                        <span class="section-heading text-white" data-aos="fade-right" >BEST FEATURES</span>
+                        <h2 class="section-subheading background-color mt-1 mt-md-2 mt-lg-3" data-aos="fade-left">We are a new digital product development agency</h2>
+                    </div>
+                </div>
+                <div class="row features-contents mt-2 mt-lg-4">
+                    <div class="col-sm-6 col-lg-3 gy-4 gy-lg-0 gx-4 gx-lg-5 text-md-center text-lg-start" data-aos="zoom-in" >
+                        <div class="feature-content ">
+                            <i class="fa-solid fa-paper-plane background-color"></i>
+                            <h4 class="text-white">Digital
+                                <br>
+                                Marketing </h4>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3 gy-4 gy-lg-0 gx-4 gx-lg-5 text-md-center text-lg-start" data-aos="zoom-in" >
+                        <div class="feature-content ">
+                            <i class="fa-solid fa-paper-plane background-color"></i>
+                            <h4 class="text-white">Web & App
+                             <br>
+                            Development</h4>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3 gy-4 gy-lg-0 gx-4 gx-lg-5 text-md-center text-lg-start" data-aos="zoom-in" >
+                        <div class="feature-content ">
+                            <i class="fa-solid fa-paper-plane background-color"></i>
+                            <h4 class="text-white">Mobie & Web 
+                                <br>
+                                Design</h4>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3 gy-4 gy-lg-0 gx-4 gx-lg-5 text-md-center text-lg-start" data-aos="zoom-in" >
+                        <div class="feature-content ">
+                            <i class="fa-solid fa-paper-plane background-color"></i>
+                            <h4 class="text-white">Social Media 
+                                <br>
+                                Marketing</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </section>
+        <!-- feature ends here -->
+
+
+        <!-- portfolio starts here -->
+         <section id="portfolio">
+            <div class="container-fluid">
+                <div class="row">
+                    
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <img src="assets/images/portfolio1.jpg" alt="portfolio img" class="img-fluid">
+                            <div class="portfolio-content">
+                                <span class="background-color section-heading">Art & Illustration</span>
+                                <p class="text-white">Inspiring new space</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="assets/images/portfolio3.jpg" alt="portfolio img" class="img-fluid">
+                            <div class="portfolio-content">
+                                <span class="background-color section-heading">Art & Illustration</span>
+                                <p class="text-white">Inspiring new space</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="assets/images/portfolio4.jpg" alt="portfolio img" class="img-fluid">
+                            <div class="portfolio-content">
+                                <span class="background-color section-heading">Art & Illustration</span>
+                                <p class="text-white">Inspiring new space</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="assets/images/portfolio2.jpg" alt="portfolio img" class="img-fluid">
+                            <div class="portfolio-content">
+                                <span class="background-color section-heading">Art & Illustration</span>
+                                <p class="text-white">Inspiring new space</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+         </section>
+        <!-- portfolio ends her -->
+
+
+        <!-- service starts here -->
+         <section id="service" class="section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10">
+                        <h3>
+                            <span>Cases study </span>
+                            Pleasure in the job puts
+                            perfection in the work</h3>
+                    </div>
+                </div>
+                <div class="row mt-2 mt-md-4">
+                    <div class="col-lg-4 gx-lg-4 gy-4 gy-lg-0" data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
+                        <div class="service1">
+                            <div class="service-contents">
+                               <span>Consulting</span>
+                               <h4 class="text-white mt-4">Analyze the company annual reports</h4>
+                               <p class="description text-white mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis
+                               </p>
+                               <div class="service-btn">
+                                <button type="button" class="btn btn-style ">
+                                    <i class="fa-solid fa-layer-group"></i>
+                                    Check it out
+                                </button>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 gx-lg-4 gy-4 gy-lg-0" data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
+                        <div class="service2">
+                            <div class="service-contents">
+                                <span>Marketing</span>
+                                <h4 class="text-white mt-4">Achievement progress target Smartly</h4>
+                                <p class="description text-white mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
+                                <div class="service-btn">
+                                    <button type="button" class="btn btn-style ">
+                                        <i class="fa-solid fa-layer-group"></i>
+                                        Check it out
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 gx-lg-4 gy-4 gy-lg-0" data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
+                        <div class="service3">
+                            <div class="service-contents">
+                                <span>Finanlcial</span>
+                                <h4 class="text-white mt-4">Increase the standard conversion rate</h4>
+                                <p class="description text-white mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
+                                <div class="service-btn">
+                                    <button type="button" class="btn btn-style ">
+                                        <i class="fa-solid fa-layer-group"></i>
+                                        Check it out
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </section>
+        <!-- service ends here -->
+
+
+         <!-- counter starts here -->
+        <section id="counters" class="section-padding">
+            <div class="container">
+                <div class="row justify-content-center text-center ">
+                    <div class="col-6 col-md-3 gy-3 gy-md-0">
+                        <div id="counters_1">
+                            <div class="counter" data-TargetNum="2400" data-Speed="4000">0</div>
+                        </div>
+                        <p class="description ">Clients</p>
+                    </div>
+                    <div class="col-6 col-md-3 gy-3 gy-md-0">
+                        <div id="counters_1">
+                            <div class="counter" data-TargetNum="133" data-Speed="4000">0</div>
+                        </div>
+                        <p class="description ">Completed Projects</p>
+                    </div>
+                    <div class="col-6 col-md-3 gy-3 gy-md-0">
+                        <div id="counters_1">
+                            <div class="counter" data-TargetNum="754" data-Speed="4000">0</div>
+                        </div>
+                        <p class="description ">Downloaded files</p>
+                    </div>
+                    <div class="col-6 col-md-3 gy-3 gy-md-0">
+                        <div id="counters_1">
+                            <div class="counter" data-TargetNum="46" data-Speed="4000">0</div>
+                        </div>
+                        <p class="description ">Awarded wins</p>
+                    </div>
+                </div>
+            </div>
+         </section>
+         <!-- counter ends here -->
+
+
+        <!-- contact starts here -->
+         <section id="contact" class="section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7 gy-0 gy-md-0 gx-0 gx-md-5">
+                        <h3 class="section-subheading background-color">Get In Touch.</h3>
+                        <form action="" method="get">
+                            <div class="form-floating mt-4">
+                                <label for="name">Name :</label>
+                                <input type="text" id="name" name="name"  class="form-control">
+                            </div>
+                            <div class="form-floating mt-3">
+                                <label for="email">Email :</label>
+                                <input type="email" id="email" name="email"  class="form-control">
+                            </div>
+                            <div class="form-floating mt-5">
+                                <label for="comment">Messages :</label>
+                                <textarea class="form-control" id="comment" name="text" placeholder="Comment goes here"></textarea>
+                              </div>
+                              <button type="submit" type="button" class="btn btn-style mt-3">Send Message</button>
+                        </form>
+                    </div>
+                    <div class="col-md-5 gy-4 gy-md-0 gx-0 gx-md-5">
+                        <h3 class="section-subheading background-color">Contact Info.</h3>
+                        <div class="mt-3">
+                            <h1 class="section-heading ">Let's Talk.</h1>
+                            <span class="description mb-1 mt-2">Email@example.com</span>
+                            <span class="description">+4.930.705.5448</span>
+                        </div>
+                        <div class="mt-3">
+                            <h1 class="section-heading ">Visit us.</h1>
+                            <address class="description mt-2">
+                                295 Witting Streets Suite 666,
+                                <span>Melbourne, Australia</span>
+                            </address>
+                        </div>
+                        <div class="mt-3">
+                            <ul class="d-flex">
+                                <li>
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </li>
+                                <li>
+                                    <i class="fa-brands fa-twitter"></i>
+                                </li>
+                                <li>
+                                    <i class="fa-brands fa-instagram"></i>
+                                </li>
+                                <li>
+                                    <i class="fa-brands fa-behance"></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </section>
+        <!-- contact ends here -->
+
+    </main>
+    <!-- main starts here -->
+
+
+    <!-- footer starts here -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center ">
+                    <p class="description text-white  ">@ copyright 2025 <span class="background-color "> Obelisk </span></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer ends here -->
+
+
+
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- bootstrap js cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- counter js cdn -->
+     <script src="https://www.jqueryscript.net/demo/animated-counter-when-visible/multi-animated-counter.js"></script>
+    <!-- progressbar jquery -->
+    <script src="assets/js/animated-counter-prograssbar.js"></script>
+    <!-- owl carousel cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- aos jquery cdn -->
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <script>
+        AOS.init({
+				easing: 'ease-out-back',
+				duration: 1000
+			});
+     </script>
+    <!-- my js -->
+     <script src="assets/js/script.js"></script>
+</body>
+</html>

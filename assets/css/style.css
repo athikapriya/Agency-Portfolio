@@ -1,0 +1,649 @@
+/* common code and reset code starts here */
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Poppins", serif;
+
+    position: relative;
+
+}
+
+:root{
+    --brand-color: #0C918C;
+    --color-main: #12C2E9;
+    --color-secondary: #D641A7;
+    --color-ternary: #F64F59;
+    --text-color : rgba(102,102,102);
+    --btn-color : rgb(238, 238, 238);
+    --btn-hoverColor : #fff;
+    --transition: 0.3s;
+    --background-color1 : #0C0F16;
+    --background-color2 : #11141B;
+}
+
+.background-color {
+    background: linear-gradient(to right, var(--color-main),var(--color-secondary), var(--color-ternary) );
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text ;
+}
+
+.section-padding{
+    padding: 100px 0px;
+}
+
+h1{
+    font-size: 3.7rem;
+    font-weight: 800;
+    line-height: 5.6rem;
+}
+
+.description{
+    font-size: 0.90rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    color: var(--text-color);
+}
+
+.section-heading{
+    font-size: 0.93rem;
+    font-weight: 500;
+    line-height: 0.93rem;
+    letter-spacing: 0.2rem;
+}
+
+.section-subheading{
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: 3.5rem;
+}
+
+.btn-style{
+    display: inline-block;
+    padding: 0.6rem 1.5rem;
+    border: none;
+    border-radius: 3px;
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+    letter-spacing: 0.05rem;
+    color: var(--btn-color) ;
+    border: 1px solid var(--btn-color) ;
+    transition: var(--transition);
+}
+
+/* common code and reset code ends here */
+
+
+
+/* header starts here */
+.header-top{
+    background: linear-gradient(to right, var(--color-main),var(--color-secondary), var(--color-ternary) );
+}
+
+.header-top i {
+    display: inline-block;
+    padding: 0rem 0.5rem;
+    font-size: 0.8rem ;
+    font-weight: 400;
+    line-height: 0.8rem;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.header-top i:hover{
+    transform: scale(1.2);
+}
+
+.header-top span{
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 1.6rem;
+}
+
+.navbar-brand img{
+    height: 1.6rem;
+    display: inline-block;
+}
+
+nav .nav-link{
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.006rem;
+    color: var(--text-color) !important;
+    position: relative;
+    transition: var(--transition);
+    padding-left: 0 !important; 
+    padding-right: 0 !important;
+}
+
+nav .nav-link:hover{
+    background: linear-gradient(to right, var(--color-main),var(--color-secondary), var(--color-ternary) );
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text ;
+}
+
+nav .nav-link::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 2px;
+    width: 0%;
+    /* background-color: var(--brand-color); */
+    background: linear-gradient(to right, var(--color-main),var(--color-secondary), var(--color-ternary) );
+    transition: var(--transition);
+}
+   
+nav .nav-link:hover::before{
+    width: 100% ;
+    left: 0;
+}
+
+.navbar-toggler .fa-bars-staggered{
+    color: var(--text-color);
+}
+
+.offcanvas-header{
+    width: 100%;
+}
+
+.offcanvas-header img{
+    height: 30px;
+    display: inline-block;
+}
+
+.offcanvas-header button{
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.offcanvas-header .btn-close{
+    padding: 0;
+    font-size: 1rem;
+}
+
+.offcanvas-title  {
+    width: 80%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+
+.btn{
+    --bs-btn-box-shadow : transparent;
+    --bs-btn-border-width: 0px;
+}
+
+.btn-close {
+    --bs-btn-close-focus-shadow: transparent;
+}
+
+.navbar{
+    --bs-navbar-toggler-border-color: transparent;
+}
+
+.navbar-toggler{
+    line-height: 0;
+}
+/* header ends here */
+
+
+
+/* banner starts here */
+#banner .carousel-content1  {
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../images/banner1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0px;
+    position: relative;
+}
+
+#banner .carousel-content2  {
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../images/banner2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0px;
+    position: relative;
+}
+
+#banner .carousel-content3 {
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../images/banner3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0px;
+    position: relative;
+}
+
+#about .section-subheading{
+    font-size: 1.93rem;
+    line-height: 2.6rem;
+}
+
+#banner .description{
+    color: rgb(238, 238, 238);
+    line-height: 1.8rem;
+}
+
+#banner .btn:hover{
+    color: #000;
+    background-color: var(--btn-hoverColor);
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon{
+    background-image: none;
+}
+
+.carousel-control-next-icon i, .carousel-control-prev-icon i{
+    display: inline-block;
+    font-size: 0.65rem;
+    padding: 0.5rem 0.65rem;
+    color: var(--btn-hoverColor);
+    border-radius: 50%;
+    border: 0.01rem solid #ccc;
+}
+
+.page-number{
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    z-index: 1;
+}
+
+#banner .page-number p{
+    font-size: 3rem;
+    font-weight: 700;
+    color: transparent;
+    -webkit-text-stroke : 1px #FFFFFF;
+    -webkit-background-clip: text;
+}
+
+#banner .page-number p span:first-child{
+    color: var(--btn-hoverColor);
+    font-weight: 100;
+    font-size: 2rem;
+}
+
+#banner .page-number p span:last-child{
+    color: var(--btn-hoverColor);
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+/* banner ends here */
+
+
+
+/* about starts here */
+#about{
+    background-color: var(--background-color1);
+}
+
+#about ul{
+    padding-left: 0rem;
+}
+
+#about ul li i, #about ul li span{
+    display: inline-block;
+}
+
+#about ul li i{
+    color: var(--text-color);
+    margin-right: 0.5rem;
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+#about ul li:hover i{
+    color: var(--color-main);
+}
+
+#about ul li span{
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+#about .about-btn i{
+    display: inline-block;
+}
+
+#about .about-btn button{
+    border-radius: 1.2rem;
+    border-color: linear-gradient(to right, var(--color-main),var(--color-secondary), var(--color-ternary) ) !important;
+}
+
+#about .about-img{
+    width: 85%;
+    display: inline-block; 
+    box-shadow: 30px -30px 2px #1b1e20;
+    position: relative;
+    /* top: 30px; */
+    left: 0;
+}
+
+#about .about-content{
+    position: relative;
+}
+
+#about .growth{
+    background-color: #171a23;
+    border-radius: 5px;
+    position: absolute;
+    left: 7%;
+    bottom: 12%;
+    padding: 0.9rem;
+}
+
+.growth .d-flex img{
+    background-color: var(--background-color2);
+    display: inline-block;
+    padding: 0.95rem 0.55rem ;
+    border-radius: 5px;
+    /* width: 80%; */
+}
+
+#about .progress-title{
+    color: var(--btn-color);
+}
+
+/* about ends here */
+
+
+/* feature starts here */
+
+#feature-section{
+    background-color: var(--background-color2);
+}
+
+#feature-section .feature-content{
+    background-color: var(--background-color1);
+    padding: 2rem 2.5rem;
+    transition: var(--transition);
+    
+}
+
+#feature-section  .feature-content h4{
+    font-size: 0.90rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+}
+
+#feature-section  .feature-content i{
+    font-size: 1.2rem;
+    font-weight: 100;
+    line-height: 2.7rem;
+}
+
+.feature-content:hover{
+    box-shadow: 7px 7px var(--color-main);
+}
+/* feature ends her */
+
+
+/* portfolio starts here */
+
+#portfolio{
+    background-color: var(--background-color1);
+}
+#portfolio .owl-nav, #portfolio .owl-dots{
+    display: none;
+}
+
+#portfolio .owl-carousel{
+    padding: 0;
+}
+
+#portfolio .owl-carousel .item{
+    height: 300px;
+    position: relative;
+}
+
+#portfolio .item img{
+    height: inherit;
+}
+
+#portfolio .item .portfolio-content{
+    position: absolute;
+    bottom: 0;
+    right: 30%;
+    z-index: 9;
+    text-align: center;
+    padding: 0.5rem;
+    padding-bottom: 0;
+    background-color: var(--background-color1);
+}
+
+#portfolio .portfolio-content span{
+    font-size: 0.75rem;
+    letter-spacing: 0.01rem;
+    text-transform: uppercase;
+}
+
+#portfolio .portfolio-content p{
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+
+/* portfolio ends her */
+
+/* service starts here */
+#service{
+    background-color: var(--background-color2);
+}
+
+#service h3{
+    color: var(--btn-hoverColor);
+    font-size: 2.3rem;
+    font-weight: 700;
+    line-height: 3.1rem;
+    text-transform: uppercase;
+}
+
+#service h3 span{
+    color: transparent;
+    -webkit-text-stroke : 1px #FFFFFF;
+    -webkit-background-clip: text;
+}
+
+.service1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/service1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* filter: grayscale(1); */
+    transition: var(--transition);
+    border-radius: 4px;
+}
+
+
+.service2  {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/service2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* filter: grayscale(1); */
+    transition: var(--transition);
+    border-radius: 4px;
+}
+
+.service3  {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/service3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: var(--transition);
+    border-radius: 5px;
+}
+
+.service1:hover, .service2:hover, .service3:hover{
+    transform: scale(1.04);
+}
+
+.service-contents{
+    padding: 2rem;
+}
+
+.service-contents span{
+    color: var(--btn-hoverColor);
+    font-size: 0.7rem;
+    line-height: 1.1rem;
+    font-weight: 500;
+    padding: 0.25rem 0.3rem;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 50px;
+}
+
+.service1 .service-contents span{
+    background-color: var(--color-main);
+}
+
+.service2 .service-contents span{
+    background-color: var(--color-secondary);
+}
+
+.service3 .service-contents span{
+    background-color: var(--color-ternary);
+}
+
+.service h4{
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 2.1rem;
+}
+
+#service .btn:hover {
+    border-color: var(--btn-hoverColor) !important;
+    color: var(--btn-hoverColor) !important;
+}
+/* service ends here */
+
+
+
+/* counter starts here */
+#counters{
+    background-color: var(--background-color1);
+}
+
+#counters .counter{
+    color: var(--btn-hoverColor);
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+#counters .col-md-3{
+    border-right: 0.001rem solid #313131;
+}
+
+
+#counters .col-md-3:last-child{
+    border: none;
+}
+
+#counters .col-md-3 p{
+    color: var(--btn-hoverColor) ;
+}
+/* counter ends here */
+
+
+/* contact starts here */
+#contact{
+    background-image: url(../images/contact.svg);
+    background-color: var(--background-color1);
+    background-repeat: no-repeat;
+    background-size: cover;
+   background-position: center;
+}
+
+
+#contact h3{
+    font-size: 2rem;
+}
+
+
+#contact form input {
+    display: inline-block;
+    background-color: transparent;
+    border: none;
+    border-radius: 0%;
+    border-bottom: 1px solid #ccc;
+}
+
+#contact form label{
+    color: var(--btn-color);
+    font-size: 0.9rem;
+}
+
+#contact form textarea{
+    display: inline-block;
+    background-color: transparent;
+    border-radius: 0%;
+    border: 1px solid #ccc;
+    height: 150px;
+}
+
+form button{
+    background-color: var(--btn-hoverColor) !important;
+    color: var(--text-color)    !important;
+    border-radius: 20px !important;
+}
+
+#contact .section-heading{
+    color: var(--btn-hoverColor);
+}
+
+#contact span{
+    display: block;
+}
+
+ul{
+    padding-left: 0rem;
+}
+
+#contact ul li .fa-brands  {
+    display: inline-block;
+    color: var(--btn-color) ;
+    padding: 0.7rem;
+    font-size: 0.9rem;
+    overflow: hidden;
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+#contact ul li .fa-brands:hover{
+    color: var(--color-main);
+}
+/* contact ends here */
+
+/* footer starts here */
+footer{
+    background-color: var(--background-color1);
+    padding: 1rem 0rem;
+}
+
+
+/* footer ends here */
+
+
+
+

@@ -1,0 +1,147 @@
+/* xl screen */
+@media screen and (max-width:1200px)    {
+    #about .about-img{
+        width: 100%;
+    }
+
+    #about .growth{
+        left: -5%;
+    }
+
+    
+}
+
+
+/* large screen */
+@media  screen and (max-width:992px) {
+
+    .section-padding{
+        padding: 70px 0px;
+    }
+
+    nav .nav-link{
+        color: #f5f5f5 !important;
+    }
+
+    h1{
+        font-size: 3.1rem;
+        line-height: 4.5rem;
+    }
+
+    #banner .description{
+        font-size: 0.85rem;
+        line-height: 1.5rem;
+    }
+
+    #banner .page-number p{
+        font-size: 2.7rem;
+    }
+
+    #banner .page-number p span:first-child{
+        font-size: 1.7rem;
+    }
+    
+    #banner .page-number p span:last-child{
+        font-size: 1.7rem;
+    }
+
+    #about .about-img{
+        width: 78%;
+    }
+
+    #about .growth{
+        left: 10%;
+    }
+
+    #about .section-subheading{
+        font-size: 1.7rem;
+    }
+
+    .section-subheading{
+        line-height: 3rem;
+    }
+
+    #counters .counter{
+        font-size: 1.8rem;
+    }
+
+    .description{
+        font-size: 0.85rem;
+    }
+
+    #service h3{
+        font-size: 2rem;
+    }
+}
+
+
+
+
+/* md screen */
+@media  screen and (max-width:768px) {
+    h1{
+        font-size: 2.9rem;
+    }
+
+    #banner .description{
+        font-size: 0.85rem;
+    }
+
+    .description, #about ul li span{
+        font-size: 0.88rem;
+    }
+
+   .section-subheading {
+    font-size: 2rem;
+   }
+
+   #portfolio .item .portfolio-content{
+    right: 28%;
+    }
+
+    #counters .col-md-3{
+        border-right: none;
+    }
+
+    #counters .counter{
+        font-size: 1.7rem;
+    }
+
+    .service h4{
+        font-size: 1.3rem;
+    }
+
+    #service h3{
+        font-size: 1.7rem;
+        line-height: 2.8rem;
+    }
+}
+
+
+
+/* sm screen */
+@media  screen and (max-width:576px) {
+    #banner .page-number p{
+        font-size: 2rem;
+    }
+
+    #banner .page-number p span:first-child{
+        font-size: 1.2rem;
+    }
+    
+    #banner .page-number p span:last-child{
+        font-size: 1.2rem;
+    }
+
+    #portfolio .item .portfolio-content{
+        right: 35%;
+    }
+
+    #portfolio .owl-carousel .item{
+        height: auto;
+    }
+
+    #portfolio .item .portfolio-content{
+        display: none;
+    }
+}
