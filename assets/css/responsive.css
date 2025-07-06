@@ -7,8 +7,6 @@
     #about .growth{
         left: -5%;
     }
-
-    
 }
 
 
@@ -143,5 +141,9 @@
 
     #portfolio .item .portfolio-content{
         display: none;
+    }
+
+    #about, #feature-section, #service, #counters, #contact{
+        padding: 0px 20px;
     }
 }

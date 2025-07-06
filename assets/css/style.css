@@ -296,6 +296,7 @@ nav .nav-link:hover::before{
 /* about starts here */
 #about{
     background-color: var(--background-color1);
+    overflow: hidden;
 }
 
 #about ul{
