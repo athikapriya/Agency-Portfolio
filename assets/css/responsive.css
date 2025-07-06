@@ -144,6 +144,8 @@
     }
 
     #about, #feature-section, #service, #counters, #contact{
-        padding: 0px 20px;
+        padding: 60px 20px !important;
     }
+
+   
 }
